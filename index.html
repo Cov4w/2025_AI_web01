@@ -24,43 +24,15 @@
             border: 3px solid #ddd;
             margin-bottom: 15px;
         }
-        input {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        button {
-            padding: 10px 15px;
-            cursor: pointer;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        button:hover {
-            background: #0056b3;
-        }
     </style>
 </head>
 <body>
     <h2>내 프로필 페이지</h2>
     <div class="profile-container">
-        <img id="profileImage" src="https://via.placeholder.com/150" alt="프로필 이미지">
+        <!-- 여기에 직접 프로필 이미지 경로를 넣으면 됨 -->
+        <img src="image.webp" alt="프로필 이미지">
         <h3>최승균</h3>
-        <p>AI Developer | GitHub User</p>
-        <input type="text" id="imageUrl" placeholder="새로운 이미지 URL 입력">
-        <button onclick="changeImage()">이미지 변경</button>
+        <p>Web Developer | GitHub User</p>
     </div>
-
-    <script>
-        function changeImage() {
-            let url = document.getElementById("imageUrl").value;
-            if (url) {
-                document.getElementById("profileImage").src = url;
-            } else {
-                alert("이미지 URL을 입력하세요!");
-            }
-        }
-    </script>
 </body>
 </html>
